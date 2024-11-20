@@ -13,20 +13,27 @@ Now, for running Ollama on on Alpine cluster, CURC does recommend downloading an
 Step 1 - Download and prepare binaries. Downloading v0.4.2 which is the latest version of Ollama
 
 acompile --ntasks=4 --time=01:00:00
+
 export ollama_v="v0.4.2"
+
 mkdir -p /projects/$USER/$ollama_v
+
 cd /projects/$USER/$ollama_v 
 
 #grab ollama binary version
+
 curl -L https://github.com/ollama/ollama/releases/download/${ollama_v}/ollama-linux-amd64.tgz -o ollama
 
 #unzip the binary version
+
 tar -xvzf .tar.gz
 
 #make binary executable 
+
 chmod +x ollama
 
 #End acompile session
+
 exit
 
 Now, you can start up an ollama server in an sinteractive session on Alpine if you want to run it on CPU and a_testing partition if we want to run on GPU
