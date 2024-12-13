@@ -8,6 +8,10 @@ Module System: https://curc.readthedocs.io/en/latest/compute/modules.html
 Compiling Software: https://curc.readthedocs.io/en/latest/compute/compiling.html 
 Containerization: https://curc.readthedocs.io/en/latest/software/Containerization.html
 
+Before we install Ollama or run Ollama on CURC clusters, lets understand the difference between CPU and GPU:
+
+CPU mainly is used in processing variety of tasks as we do on our computer. GPU's main purpose is parallely processing those tasks and thereby making the output run quickly. This includes in rendering graphics and computations fastly and providing with our output. The difference is mainly in number of cores that is typically between 4-16 in case of CPU and in hundreds or thousands in case of GPU. So basically, GPUs are preferred when you want to perform some heavy tasks and when you need more power to run it.
+
 Now, for running Ollama on on Alpine cluster, CURC does recommend downloading and running the pre-compiled binaries provided by the creators of Ollama. This removes the need to install software into directories, like /usr , which you generally people don't not have access to. These are some of the set of instructions that one can use to download and run the Ollama binaries initially:
 
 Step 1 - Download and prepare binaries. Downloading v0.4.2 which is the latest version of Ollama
@@ -36,6 +40,9 @@ chmod +x ollama
 
 exit
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Step 2:
 Now, you can start up an ollama server in an sinteractive session on Alpine if you want to run it on CPU and a_testing partition if we want to run on GPU
 Note: Verify the bin location once and adjust the PATh variable below
 
@@ -54,3 +61,5 @@ The above should take 4-5 mins for model to load and run. For running this fastl
 
 This should run fastly and load quickly. Note that the timing for getting alloted for a job on NVIDIA server will take a lot of time(Atmost 1-2 hours sometimes), so pick some odd times for running the Ollama models. I usually run this in night time around 11-12 PM and find it getting alloted quite easily, maybe due to less people working at this hour. To avoid this, Blanca clusters can be something to look forward to.
 
+I have also recorded a video for explaining a short demo which can be located in the following:
+https://drive.google.com/file/d/16YWH9Qk1SPYumAO69_Bp2J13xEFGKUzD/view?usp=sharing
