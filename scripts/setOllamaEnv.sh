@@ -5,7 +5,7 @@
 export OLLAMA_V="v0.4.2"
 
 #Set $OLLAMA_USER with value provided in class
-#hint: export $OLLAMA_USER='VALUE'
+#hint: export OLLAMA_USER="your_username"
 
 # Update PATH to include Ollama binary directory
 export PATH="$PATH:/projects/$OLLAMA_USER/ollama/$OLLAMA_V/bin"
