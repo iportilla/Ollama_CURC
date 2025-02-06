@@ -10,15 +10,16 @@ export OLLAMA_V="v0.4.2"
 # Update PATH to include Ollama binary directory
 export PATH="$PATH:/projects/$OLLAMA_USER/ollama/$OLLAMA_V/bin"
 
-
 # Define temporary directory
 export OLLAMA_TMPDIR="$SCRATCHDIR/$USER/ollama_temp"
+mkdir -p "$OLLAMA_TMPDIR"
 
 # Set host and port
 export OLLAMA_HOST="0.0.0.0:9999"
 
 # Define the model storage directory
 export OLLAMA_MODELS="/projects/$USER/my_ollama_models"
+mkdir -p "$OLLAMA_MODELS"
 
 # Set parallelism constraints
 export OLLAMA_NUM_PARALLEL=1
