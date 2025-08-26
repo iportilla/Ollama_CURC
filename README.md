@@ -24,7 +24,7 @@ mkdir -p /projects/$USER/$ollama_v
 
 cd /projects/$USER/$ollama_v 
 
-#grab ollama binary version
+#grab ollama binary version - https://github.com/ollama/ollama/releases
 
 curl -L https://github.com/ollama/ollama/releases/download/${ollama_v}/ollama-linux-amd64.tgz -o ollama
 
