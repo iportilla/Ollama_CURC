@@ -30,15 +30,15 @@
 
 4. See the queue
 
-5. ```
+ ```
    squeue -u $USER
-                JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-             17074810 atesting_ sinterac jepo7247  R       0:41      1 c3gpu-c2-u13
+                JOBID PARTITION     NAME     USER ST          TIME  NODES    NODELIST(REASON)
+             17074810 atesting_ sinterac    7247  R          0:41      1    c3gpu-c2-u13
    ```
 
-6. Set `env` variables with:
+5. Set `env` variables with:
 
-7. ```script
+```script
    # Set version
    export OLLAMA_V="v0.4.2"
    
@@ -64,11 +64,11 @@
    export OLLAMA_MAX_LOADED_MODELS=1
    ```
 
-8.  Or 
+ Or 
 
    `source ollama_env.sh`
 
-9. Run ollama server with:
+6. Run ollama server with:
 
    ```script nohup ollama serve > /dev/null 2>&1 &
    nohup ollama serve > /dev/null 2>&1 &
@@ -76,7 +76,7 @@
 
    
 
-10. Check ollama is running with:
+7. Check ollama is running with:
 
     ```script
     ollama list
@@ -99,17 +99,17 @@
 
     
 
-11. Load small ollama model with:
+8. Load small ollama model with:
 
      `ollama run tinyllama --verbose`
 
-12. Example prompt
+9. Example prompt
 
     ```text
     write a 1000-word zen story about love
     ```
 
-13. Output
+10. Output
 
     ```text
     Love, like the rainbow before it, always manages to cover up the darkness with its light. It is a constant reminder of hope, joy and happiness. And as much as it
